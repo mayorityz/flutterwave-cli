@@ -1,6 +1,5 @@
 const argv = require("../utilitties/test");
 const { prompt } = require("enquirer");
-const Rave = require("../rave/Transactions");
 const R = require("../rave/Wave");
 
 if (argv._[0] === "transactions") {
@@ -24,12 +23,7 @@ if (argv._[0] === "transactions") {
         },
       ];
       const answer = await prompt(question);
-
       const x = new R().processing("transactions", "all", answer);
-
-      // const FLW = new Rave();
-      // const response = await FLW.transFunc("all", answer);
-      // console.log(response.data);
     };
     request();
   }
@@ -51,9 +45,6 @@ if (argv._[0] === "transactions") {
     const request = async () => {
       const answer = await prompt(question);
       const x = new R().processing("transactions", "verify", answer);
-      // const FLW = new Rave();
-      // const response = await FLW.transFunc("verify", answer);
-      // console.log(response.data);
     };
     request();
   }
@@ -80,9 +71,7 @@ if (argv._[0] === "transactions") {
 
     const request = async () => {
       const answer = await prompt(question);
-      const FLW = new Rave();
-      const response = await FLW.transFunc("refund", answer);
-      console.log(response.data);
+      const x = new R().processing("transactions", "refund", answer);
     };
     request();
   }

@@ -7,6 +7,8 @@ const { argv } = require("yargs")
   ])
   .command(require("../commands/subaccounts"))
   .command(require("../commands/transactions"))
+  .command(require("../commands/virtualcards"))
+  .command(require("../commands/virtualaccounts"))
   .describe("help", "Show help.")
   .describe("version", "Show version number.")
   .epilog("$0 dev by mayorityz -2020");
@@ -15,3 +17,5 @@ module.exports = argv;
 
 require("../argvs/subaccounts.argv");
 require("../argvs/transactions.argv");
+require("../argvs/virtualcard.argv");
+require("../argvs/virtualacct.argv");

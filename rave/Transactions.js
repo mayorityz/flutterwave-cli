@@ -19,7 +19,8 @@ class Transactions {
           break;
 
         case "refund":
-          return await flw.Transaction.refund(payload);
+          console.log("processing refund");
+          return await this.flw.Transaction.refund(payload);
           break;
 
         default:

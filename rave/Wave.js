@@ -27,6 +27,20 @@ function Base() {
       const response = await FLW.transFunc(param, query);
       console.log(response);
     }
+
+    if (WAVEMETHOD === "virtualcards") {
+      const VC = require("../rave/VirtualCard");
+      const FLW = new VC();
+      const response = await FLW.vc(param, query);
+      console.log(response);
+    }
+
+    if (WAVEMETHOD === "virtualaccounts") {
+      const VC = require("../rave/VirtualAccount");
+      const FLW = new VC();
+      const response = await FLW.vc(param, query);
+      console.log(response);
+    }
   };
 
   this.destructor = function () {
