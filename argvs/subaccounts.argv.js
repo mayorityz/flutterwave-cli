@@ -93,7 +93,7 @@ if (argv._[0] === "subaccounts") {
       });
 
       const bankDetails = arrayOfBanks.data.filter(
-        (bank, i) => bank.name === bank_.bank
+        (bank) => bank.name === bank_.bank
       );
 
       answer.account_bank = bankDetails[0].code;

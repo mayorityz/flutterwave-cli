@@ -19,6 +19,29 @@ class Misc {
       this.Base.destructor();
     }
   }
+
+  async Misc(route, payload) {
+    try {
+      switch (route) {
+        case "bank":
+          // run the bank code here ...
+          break;
+        case "wallets":
+          // get all wallets
+          return await this.flw.Misc.bal();
+          break;
+        case "bvn":
+          // get details on a bvn ...
+          return await this.flw.Misc.bvn(payload);
+        default:
+          break;
+      }
+    } catch (error) {
+      return error.message;
+    } finally {
+      this.Base.destructor();
+    }
+  }
 }
 
 module.exports = Misc;
