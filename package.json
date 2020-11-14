@@ -1,6 +1,6 @@
 {
   "name": "flutterwave-cli-tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cli for flutterwave",
   "main": "./utilitties/test",
   "author": "abiodun mayowa",
@@ -15,7 +15,7 @@
     "yargs": "^16.1.0"
   },
   "bin": {
-    "flw": "./utilitties/test"
+    "flw": "./utilitties/test.js"
   },
   "repository": {
     "type": "git",
