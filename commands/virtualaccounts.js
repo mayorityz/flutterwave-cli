@@ -12,11 +12,11 @@ exports.builder = {
     alias: "f",
   },
   status: {
-    describe: "block/unblock a V.Card",
+    describe: "-- coming soon block/unblock a V.Account",
     alias: "s",
   },
   terminate: {
-    describe: "terminate a card",
+    describe: "-- coming soon terminate an account",
     alias: "t",
   },
 };
