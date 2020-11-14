@@ -1,10 +1,10 @@
 const argv = require("../utilitties/test");
 const { prompt } = require("enquirer");
-const R = require("../rave/Wave");
 
 // generate unique id for tx_ref
 
 if (argv._[0] === "virtualaccounts") {
+  const R = require("../rave/Wave");
   if (argv.hasOwnProperty("c")) {
     const question = [
       {

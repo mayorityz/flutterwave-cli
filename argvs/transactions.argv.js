@@ -1,8 +1,8 @@
 const argv = require("../utilitties/test");
 const { prompt } = require("enquirer");
-const R = require("../rave/Wave");
 
 if (argv._[0] === "transactions") {
+  const R = require("../rave/Wave");
   /**
    * all transactions by an entry and close dates
    */

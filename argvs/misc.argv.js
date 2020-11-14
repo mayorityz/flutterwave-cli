@@ -1,8 +1,8 @@
 const argv = require("../utilitties/test");
 const { prompt } = require("enquirer");
-const Rave = require("../rave/Wave");
 
 if (argv._[0] === "misc") {
+  const Rave = require("../rave/Wave");
   if (argv.hasOwnProperty("a")) {
     const request = async () => {
       const FLW = new Rave();

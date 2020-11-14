@@ -1,5 +1,4 @@
-require("./utilitties/test");
+const DB = require("./store/db");
+// const createDB = new DB();
 
-/**
- * !todo check that customer record exists!
- */
+console.log(DB.read());

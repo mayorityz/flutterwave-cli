@@ -2,8 +2,10 @@ const Flutterwave = require("flutterwave-node-v3");
 const db = require("../store/db");
 const ora = require("ora");
 
-const publickey = db.get("credentials.pkey").value();
-const secretkey = db.get("credentials.skey").value();
+const credentials = db.read();
+
+const publickey = credentials.pkey;
+const secretkey = credentials.skey;
 
 /**
  * Flutterwave base!

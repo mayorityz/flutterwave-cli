@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { argv } = require("yargs")
   .scriptName("flw")
   .usage("Usage: $0 command -arg [param...]")
@@ -10,6 +11,7 @@ const { argv } = require("yargs")
   .command(require("../commands/virtualcards"))
   .command(require("../commands/virtualaccounts"))
   .command(require("../commands/misc"))
+  .command(require("../commands/init"))
   .describe("help", "Show help.")
   .describe("version", "Show version number.")
   .epilog("$0 dev by mayorityz -2020");
@@ -21,3 +23,4 @@ require("../argvs/transactions.argv");
 require("../argvs/virtualcard.argv");
 require("../argvs/virtualacct.argv");
 require("../argvs/misc.argv");
+require("../argvs/initialization.argv");

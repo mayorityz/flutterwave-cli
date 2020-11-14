@@ -21,7 +21,7 @@ class VirtualAccounts {
           break;
 
         default:
-          console.log("invalid Transactions param");
+          console.log("invalid Virtual Account  parameter");
           break;
       }
     } catch (error) {
