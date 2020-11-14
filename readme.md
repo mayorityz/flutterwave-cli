@@ -2,6 +2,10 @@
 
 #### Run your flutterwave account in the terminal.
 
+#### Installation
+
+Simply run `npm install flutterwave-cli-tool -g`
+
 ###### How It Works.
 
 1. To begin, simply initialize the application with `flw init -c` flag in your terminal. This will set your flutterwave private, flutterwave public & a user-defined password for you. NB. these information are local to your machine.
