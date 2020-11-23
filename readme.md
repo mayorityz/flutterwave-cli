@@ -4,7 +4,7 @@
 
 #### Installation
 
-Simply run `npm install flutterwave-cli-tool -g`
+Simply run `npm install -g flutterwave-cli-tool`
 
 ###### How It Works.
 
@@ -55,3 +55,6 @@ NB: I am currently leaving out "create" parts of the tool for now! As, I think p
 
 - add tables to some response e.g. fetch all v. cards
 - add next to navigate responses in the terminal
+
+email: mayority11@gmail.com
+www.twitter.com/mayoritycodes

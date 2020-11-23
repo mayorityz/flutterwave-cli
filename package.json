@@ -2,7 +2,7 @@
   "name": "flutterwave-cli-tool",
   "version": "1.0.1",
   "description": "cli for flutterwave",
-  "main": "./utilitties/test",
+  "main": "./utilitties/test.js",
   "author": "abiodun mayowa",
   "license": "MIT",
   "dependencies": {
